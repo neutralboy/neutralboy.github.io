@@ -9,42 +9,47 @@
     <link rel="stylesheet" href="index.css" >
     <title>Poornachandra</title>
 </head>
-<body class="pattern-grid-md">
+<body class="pattern-diagonal-lines-lg ">
     <div class="absolute position-top-right">
-        <button class="button button-xl button-white button-icon" >
+        <button onclick="shiftModes()" class="button button-xl button-white button-icon" >
             <img class="icon-s" alt="Dark Mode" src="sun.svg" />
         </button>
     </div>
     
     <div class="container center">
-    <h3 class="pattern-vertical-lines-sm  bg-mint text-pattern">POORNACHANDRA</h3>
-    
-    <div class="background-light-600 z-index-medium border border-radius max-width-m box-shadow-m padding-l">
-        <div class="group group-m group-stretch">
-            <ul>
-              <li>
-                <div class="text-align-center border-radius media media-16-9 spinner">
-                    <img src="me.jpg" alt="Poornachandra" />
-                </div>
-              </li>
-              <li>
-                <div class="text-align-center">
-                    <a href="https://github.com/neutralboy" class="font-size-xxl font-weight-extra-bold" >@neutralboy</a>
-                    <p class="font-size-l">
-                        A Programmer and a Med student.
-                    </p>
-                    <p>
-                        Find my work <a href="https://github.com/neutralboy">here</a>
-                    </p>
-                </div>
-              </li>
-            </ul>
+        <div class="background-tertiary-400 text-align-center">
+            <h3 class="pattern-vertical-lines-sm  bg-mint text-pattern">POORNACHANDRA</h3>
         </div>
-
-
+<br>
+        <div class="card z-index-medium border border-radius     box-shadow-m padding-l text-align-center">
+               <h4>
+                    This site is under construction
+               </h4>
+        </div>
     </div>
+    <script>
+        
+        var mode = "dark";
 
+        function shiftModes(){
 
-    </div>
+            if(mode == "light"){
+                document.documentElement.style.setProperty("--background", "var(--dark-bg)");
+                document.documentElement.style.setProperty("--font", "var(--font-dark)");
+                document.documentElement.style.setProperty("--card-bg", "var(--light-600)");
+                document.documentElement.style.setProperty("--checks", "var(--checks-light)");
+                mode = "dark";
+            }
+            else{
+                document.documentElement.style.setProperty("--background", "var(--light-bg)");
+                document.documentElement.style.setProperty("--font", "var(--font-light)");
+                document.documentElement.style.setProperty("--card-bg", "var(--dark-900)");
+                document.documentElement.style.setProperty("--checks", "var(--checks-dark)");
+                mode = "light";
+            }
+
+        }
+
+    </script>
 </body>
 </html>

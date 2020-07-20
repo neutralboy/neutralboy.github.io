@@ -1,18 +1,29 @@
 :root{
-    --background: rgb(37, 27, 27);
+    --dark-bg: rgb(37, 27, 27);
+    --light-bg: rgb(216, 216, 216);
+    --background: var(--dark-bg);
     --font-dark: rgb(63, 63, 63);
     --font-light: rgb(216, 216, 216);
-    --checks-light: rgb(42, 101, 218);
+    --font: var(--font-dark);
     --checks-dark: rgb(6, 36, 94);
+    --checks-light: rgb(162, 182, 223);
+    --checks: var(--checks-light)
     --font-family-system: 'Work Sans', sans-serif;
     --family-primary:  'Work Sans', sans-serif;
     --font-family: var(--family-primary);
+    --light-600: #d9dbe0;
+    --dark-900: #181c24;
+    --card-bg: var(--light-600);
 }
 body{
+    color: var(--font);
     background-color: var(--background);
 }
+.card{
+    background-color: var(--card-bg);
+}
 h3{
-    color: var(--font-light);
+    color: var(--font);
     background-color: var(--checks-light);
 }
 @media only screen and (min-width: 768px) {
@@ -22,9 +33,13 @@ h3{
 }
 @media only screen and (max-width: 600px) {
     h3{
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 }
 .my-face img{
     height: 10rem;
+}
+.background-tertiary-400{
+    display: block;
+    padding-left: 1rem;
 }
