@@ -3,53 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/turretcss/dist/turretcss.min.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@3.3.1/dist/siimple.min.css">
     <link rel="stylesheet" href="index.css" >
-    <title>Poornachandra</title>
+    <title>@neutralboy | Poornachandra V</title>
 </head>
-<body class="pattern-diagonal-lines-lg ">
-    <div class="absolute position-top-right">
-        <button onclick="shiftModes()" class="button button-xl button-white button-icon" >
-            <img class="icon-s" alt="Dark Mode" src="sun.svg" />
-        </button>
+<body>
+    <div class="siimple--mx-auto siimple-box siimple-box--primary siimple--color-light">
+
+        <div class="siimple-grid">
+            <div class="siimple-grid-row">
+                <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col--sm-12 siimple--text-center">
+                    <img alt="Poornachandra" src="https://res.cloudinary.com/poorna/image/upload/c_scale,q_auto:eco,r_125,w_250/v1596484308/IMG_20180910_081735_821.png" />
+                </div>
+                <div class="siimple-grid-col siimple-grid-col--8 siimple-grid-col--sm-12">
+                    <div class="siimple-box-title siimple--text-center">
+                        <h1 class="siimple-h1 siimple--color-white">Poornachandra</h1>  
+                        <h3 class="siimple-h5 siimple--color-white">@neutralboy</h3>
+                        <h4 class="siimple-h4 siimple--color-white">Cloud Architect, Full Stack Web Dev & Healthcare Consultant</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="siimple-grid">
+            <div class="siimple-grid-row">
+                <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col--sm-12 siimple--text-center">
+                    <a href="https://github.com/neutralboy">OpenSource & Github</a>
+                </div>
+                <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col--sm-12 siimple--text-center">
+                    <a href="mailto:leopoorna99@gmail.com">Email</a>
+                </div>
+                <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col--sm-12 siimple--text-center">
+                    <a href="/resume.pdf">My work & Resume</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="siimple--text-center">Have any questions? Mail me.</h3>
+
     </div>
     
-    <div class="container center">
-        <div class="background-tertiary-400 text-align-center">
-            <h3 class="pattern-vertical-lines-sm  bg-mint text-pattern">POORNACHANDRA</h3>
-        </div>
-<br>
-        <div class="card z-index-medium border border-radius     box-shadow-m padding-l text-align-center">
-               <h4>
-                    This site is under construction
-               </h4>
-        </div>
-    </div>
-    <script>
-        
-        var mode = "dark";
-
-        function shiftModes(){
-
-            if(mode == "light"){
-                document.documentElement.style.setProperty("--background", "var(--dark-bg)");
-                document.documentElement.style.setProperty("--font", "var(--font-dark)");
-                document.documentElement.style.setProperty("--card-bg", "var(--light-600)");
-                document.documentElement.style.setProperty("--checks", "var(--checks-light)");
-                mode = "dark";
-            }
-            else{
-                document.documentElement.style.setProperty("--background", "var(--light-bg)");
-                document.documentElement.style.setProperty("--font", "var(--font-light)");
-                document.documentElement.style.setProperty("--card-bg", "var(--dark-900)");
-                document.documentElement.style.setProperty("--checks", "var(--checks-dark)");
-                mode = "light";
-            }
-
-        }
-
-    </script>
 </body>
 </html>
